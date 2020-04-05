@@ -16,6 +16,7 @@ def register():
     if form.validate_on_submit():
         employee = Employee(
             email=form.email.data,
+            username=form.username.data,
             first_name=form.first_name.data,
             last_name=form.last_name.data,
             password=form.password.data
